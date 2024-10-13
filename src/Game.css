@@ -1,0 +1,144 @@
+/* Base styles */
+body {
+    font-family:Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121213;
+  }
+  
+  .game-container {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Daha iyi hizalama için genişlik ayarı */
+    margin: 0 auto; /* Ortalamak için */
+  }
+  
+  h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  /* Game board styles */
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .grid-row {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .grid-cell {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--tile-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .correct {
+    background-color: var(--correct-color);
+    color: white;
+    border-color: var(--correct-color);
+  }
+  
+  .present {
+    background-color: var(--present-color);
+    color: white;
+    border-color: var(--present-color);
+  }
+  
+  .absent {
+    background-color: var(--absent-color);
+    color: white;
+    border-color: var(--absent-color);
+  }
+  
+  /* Button styles */
+  .button-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #538d4e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #5c9658;
+  }
+  
+  .button.secondary {
+    background-color: #b59f3b; /* Yellow button for secondary action */
+  }
+  
+  .button.secondary:hover {
+    background-color: #c9b458;
+  }
+  
+  /* Input styles */
+  .guess-input {
+    margin-bottom: 20px;
+  }
+  
+  .guess-input input {
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #565758;
+    border-radius: 4px;
+    background-color: #3a3a3c;
+    color: white;
+  }
+  
+  .guess-input button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--correct-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .guess-input button:hover {
+    background-color: #5c9658;
+  }
+  
+  /* Message styles */
+  .message {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .win {
+    color: var(--correct-color);
+  }
+  
+  .lose {
+    color: var(--absent-color);
+  }
+  
