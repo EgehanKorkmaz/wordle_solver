@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import { useState } from 'react'
 import './App.css'
-import Game from './game';
+import Game from './Game';
 
 function App() {
   return (
